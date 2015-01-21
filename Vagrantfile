@@ -8,7 +8,7 @@ ENV['VAGRANT_DEFAULT_PROVIDER'] = 'lxc'
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.hostname = "wdocker"
+  config.vm.hostname = "wgalera"
   config.vm.box = "base"
   #config.omnibus.chef_version = :latest
   config.omnibus.chef_version = '11.6.0'
@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]
     chef.roles_path = ["roles"]
-    chef.add_recipe 'docker::default'
+    chef.add_recipe 'galera::default'
     
   end
 

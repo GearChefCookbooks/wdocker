@@ -2,6 +2,4 @@ site :opscode
 
 metadata
 
-#cookbook 'docker', github: 'bflad/chef-docker'
-cookbook 'docker', github: 'GearChefCookbooks/chef-docker'
-
+cookbook 'galera', github: 'GearChefCookbooks/galera.git'
