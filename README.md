@@ -1,4 +1,4 @@
-wgalera
+wdocker
 ========
 
-Wrapper Cookbook for galera
+Wrapper Cookbook for docker
