@@ -8,3 +8,4 @@ version          '0.0.1'
 
 depends 'docker'
 
+depends 'iptables', '= 1.1.0'
